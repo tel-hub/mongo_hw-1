@@ -1,0 +1,54 @@
+Опишите документ "кредит" с произвольными полями
+
+{
+  "loanAmount": 5000,                        // Сумма кредита
+  "interestRate": 5.5,                       // Процентная ставка
+  "loanTerm": 36,                            // Срок кредита в месяцах
+  "borrower": {
+    "firstName": "John",                      // Имя заемщика
+    "lastName": "Doe",                        // Фамилия заемщика
+    "dateOfBirth": "1990-05-15",               // Дата рождения заемщика
+    "address": {
+      "street": "123 Main St",                // Улица
+      "city": "New York",                      // Город
+      "state": "NY",                           // Штат
+      "postalCode": "10001"                    // Почтовый индекс
+    },
+    "employment": {
+      "employer": "ABC Company",               // Название работодателя
+      "position": "Software Engineer",         // Должность
+      "income": 60000                          // Годовой доход
+    }
+  },
+  "status": "approved",                       // Статус кредита (например, "approved" - одобрен, "pending" - на рассмотрении)
+  "createdAt": ISODate("2021-05-16T10:30:00Z"),   // Дата создания записи о кредите
+  "updatedAt": ISODate("2021-05-16T14:45:00Z")    // Дата последнего обновления записи о кредите
+}
+
+Опишите документ "заказ" с произвольными полями.
+{
+  "orderNumber": "ORD-123456",                    // Номер заказа
+  "customer": {
+    "firstName": "John",                          // Имя клиента
+    "lastName": "Doe",                            // Фамилия клиента
+    "email": "johndoe@example.com"                 // Email клиента
+  },
+  "products": [
+    {
+      "productId": "P12345",                       // Идентификатор продукта
+      "name": "Product 1",                          // Название продукта
+      "quantity": 2,                               // Количество
+      "price": 10.99                                // Цена за единицу
+    },
+    {
+      "productId": "P54321",
+      "name": "Product 2",
+      "quantity": 1,
+      "price": 19.99
+    }
+  ],
+  "totalAmount": 41.97,                            // Общая сумма заказа
+  "status": "pending",                             // Статус заказа (например, "pending" - ожидает обработки, "completed" - завершен)
+  "createdAt": ISODate("2021-05-16T15:30:00Z"),     // Дата создания заказа
+  "updatedAt": ISODate("2021-05-16T15:45:00Z")      // Дата последнего обновления заказа
+}
